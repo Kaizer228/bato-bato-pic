@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<style>
+    body {
+  background-color: #f1f1f1;
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  padding-top: 100px;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  font-size: 3rem;
+  margin: 0 0.5rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+#rock {
+  background-color: #ff0000;
+}
+
+#paper {
+  background-color: #2196f3;
+}
+
+#scissors {
+  background-color: #4caf50;
+}
+
+#user-score {
+  color: #2196f3;
+}
+
+#computer-score {
+  color: #ff0000;
+}
+</style>
+<body>
+    <h1>Rock Paper Scissors Game</h1>
+    <p>Choose your move:</p>
+    <div class="buttons">
+        <button id="rock">&#x1F44A;</button>
+        <button id="paper">&#x1f590;</button>
+        <button id="scissors">&#x270c;</button>
+    </div>
+    <p id="result"></p>
+    <p id="scores">
+        Your score: <span id="user-score">0</span>
+        Computer score: <span id="computer-score">0</span>
+    </p>
+</body>
+ 
+</html>
